@@ -271,10 +271,10 @@ document.querySelectorAll('.destination-card').forEach(card => {
             case 'lawang sewu':
                 destinationPage = 'destination/LawangSewu.html';
                 break;
-            case 'GedongSongo':
+            case 'Gedong Songo':
                 destinationPage = 'destination/GedongSongo.html';
                 break;
-            case 'CurugIndrokilo':
+            case 'Curug Indrokilo':
                 destinationPage = 'destination/CurugIndrokilo.html';
                 break;
             case 'raja ampat':
