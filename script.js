@@ -349,23 +349,32 @@ document.querySelectorAll('.social-links a').forEach(link => {
     });
 });
 
+
 // Lazy Loading for Images
-const images = document.querySelectorAll('img');
+// Lazy Loading for Images
+const images = document.querySelectorAll('img[data-src]');
 const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const img = entry.target;
+
+            // Ganti src dari data-src
+            img.src = img.dataset.src;
+
             img.style.opacity = '0';
-            img.style.transition = 'opacity 0.3s ease';
-            
+            img.style.transition = 'opacity 0.5s ease';
+
             img.onload = () => {
                 img.style.opacity = '1';
             };
-            
+
             observer.unobserve(img);
         }
     });
 });
+
+images.forEach(img => imageObserver.observe(img));
+
 
 images.forEach(img => imageObserver.observe(img));
 
