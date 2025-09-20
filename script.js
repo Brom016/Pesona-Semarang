@@ -271,8 +271,8 @@ document.querySelectorAll('.destination-card').forEach(card => {
             case 'lawang sewu':
                 destinationPage = 'destination/LawangSewu.html';
                 break;
-            case 'yogyakarta':
-                destinationPage = 'destination/yogyakarta.html';
+            case 'GedongSongo':
+                destinationPage = 'destination/GedongSongo.html';
                 break;
             case 'pulau komodo':
                 destinationPage = 'destination/komodo.html';
@@ -296,12 +296,14 @@ document.querySelectorAll('.destination-card').forEach(card => {
 });
 
 // Recommendation Button Handler
+
 const recommendationBtn = document.querySelector('.recommendation-btn');
 if (recommendationBtn) {
     recommendationBtn.addEventListener('click', () => {
-        showNotification('Halaman detail Raja Ampat sedang dalam pengembangan!', 'success');
+        window.location.href = 'destination/GedongSongo.html';
     });
 }
+
 
 // Partner Logo Interaction
 document.querySelectorAll('.partner-logo').forEach(logo => {
