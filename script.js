@@ -264,35 +264,37 @@ document.querySelectorAll('.destination-card').forEach(card => {
 
     // Click handler for destination cards
     card.addEventListener('click', () => {
-        const title = card.querySelector('h3').textContent.toLowerCase();
-        let destinationPage = '';
-        
-        switch(title) {
-            case 'lawang sewu':
-                destinationPage = 'destination/LawangSewu.html';
-                break;
-            case 'Gedong Songo':
-                destinationPage = 'destination/GedongSongo.html';
-                break;
-            case 'Curug Indrokilo':
-                destinationPage = 'destination/CurugIndrokilo.html';
-                break;
-            case 'raja ampat':
-                destinationPage = 'destination/raja-ampat.html';
-                break;
-            case 'gunung bromo':
-                destinationPage = 'destination/bromo.html';
-                break;
-            case 'toraja':
-                destinationPage = 'destination/toraja.html';
-                break;
-            default:
-                showNotification(`Informasi lebih lanjut tentang ${title} akan segera tersedia!`, 'success');
-                return;
-        }
-        
+    const title = card.querySelector('h3').textContent.toLowerCase();
+    let destinationPage = '';
+    
+    switch(title) {
+        case 'lawang sewu':
+            destinationPage = 'destination/LawangSewu.html';
+            break;
+        case 'candi gedong songo':
+            destinationPage = 'destination/GedongSongo.html';
+            break;
+        case 'curug indrokilo':
+            destinationPage = 'destination/CurugIndrokilo.html';
+            break;
+        case 'raja ampat':
+            destinationPage = 'destination/raja-ampat.html';
+            break;
+        case 'gunung bromo':
+            destinationPage = 'destination/bromo.html';
+            break;
+        case 'toraja':
+            destinationPage = 'destination/toraja.html';
+            break;
+        default:
+            showNotification(`Informasi lebih lanjut tentang ${title} akan segera tersedia!`, 'success');
+            return;
+    }
+    
+    // redirect ke halaman
         window.location.href = destinationPage;
     });
+
 });
 
 // Recommendation Button Handler
