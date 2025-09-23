@@ -277,8 +277,8 @@ document.querySelectorAll('.destination-card').forEach(card => {
         case 'curug indrokilo':
             destinationPage = 'destination/CurugIndrokilo.html';
             break;
-        case 'raja ampat':
-            destinationPage = 'destination/raja-ampat.html';
+        case 'kota lama':
+            destinationPage = 'destination/KotaLama.html';
             break;
         case 'gunung bromo':
             destinationPage = 'destination/bromo.html';
