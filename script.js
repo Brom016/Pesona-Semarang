@@ -274,17 +274,17 @@ document.querySelectorAll('.destination-card').forEach(card => {
         case 'candi gedong songo':
             destinationPage = 'destination/GedongSongo.html';
             break;
-        case 'curug indrokilo':
-            destinationPage = 'destination/CurugIndrokilo.html';
+        case 'curug lawe benowo':
+            destinationPage = 'destination/CurugLaweBenowo.html';
             break;
         case 'kota lama semarang':
             destinationPage = 'destination/KotaLama.html';
             break;
-        case 'gunung bromo':
-            destinationPage = 'destination/bromo.html';
+        case 'sam poo kong':
+            destinationPage = 'destination/Sampookong.html';
             break;
-        case 'toraja':
-            destinationPage = 'destination/toraja.html';
+        case 'Gunung Ungaran':
+            destinationPage = 'destination/GunungUngaran.html';
             break;
         default:
             showNotification(`Informasi lebih lanjut tentang ${title} akan segera tersedia!`, 'success');
