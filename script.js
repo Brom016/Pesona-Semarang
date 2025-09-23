@@ -283,7 +283,7 @@ document.querySelectorAll('.destination-card').forEach(card => {
         case 'sam poo kong':
             destinationPage = 'destination/Sampookong.html';
             break;
-        case 'Gunung Ungaran':
+        case 'gunung ungaran':
             destinationPage = 'destination/GunungUngaran.html';
             break;
         default:
