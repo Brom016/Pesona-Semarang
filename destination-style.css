@@ -118,7 +118,10 @@
 .rating-text {
     font-size: 1rem;
     opacity: 0.9;
+    color: white !important;
 }
+
+
 
 .destination-tags {
     display: flex;
